@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+.plan {
+    background: #222;
+    border: 2px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.5);
+}
+
+.plan h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f4c430;
+}
+
+.price {
+    font-size: 26px;
+    font-weight: bold;
+    color: #f4c430;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.subscribe-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #f4c430;
+    color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.subscribe-btn:hover {
+    background: #d4a20c;
+}
+
+.pro {
+    background: #f4c430;
+    color: #111;
+    border-color: #ffcc00;
+}
+
+.pro h3,
+.pro .price,
+.pro ul li {
+    color: #111;
+}
+
+.pro .subscribe-btn {
+    background: #111;
+    color: #f4c430;
+}
+
+.pro .subscribe-btn:hover {
+    background: #222;
+}

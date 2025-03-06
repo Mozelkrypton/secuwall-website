@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #b4a353;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background: #222;
+    color: #c9a964;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    color: #04203d;
+    font-size: medium;
+
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+    color: #04203d;
+    font-size: medium;
+    
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #c9a964;
+    display: block;
+}
+
+.sidebar ul li:hover {
+    background: #444;
+}
+
+/* Content Area */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 90%;
+    overflow: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e6b208;
+    color: #c9a964;
+    padding: 10px;
+}
+
+.menu-toggle {
+    background: none;
+    border: rgb(211, 195, 170);
+    color: #3b2a04;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Sections */
+section {
+    background: #c9a964;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  font-size: 1.5cm;
+  color:#3d0421
+
+}
+
+h2 {
+    color:#5a4604;
+    font-size: 1cm;
+}
+
+/* Gallery */
+.gallery-img {
+    width: 150%;
+    max-width: 600px;
+    border-radius: 10px;
+    max-width: 80%;
+    height: auto;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #c9a964;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #5a4604;
+    color: #c9a964;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid #c9a964;
+    border-radius: 5px;
+}
+
+button {
+    background: #5a4604;
+    color: #c9a964;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: #474212;
+}
+
+.email-error {
+    color: red;
+    display: none;
+}
+p {
+    color: rgb(24, 6, 54);
+    font-size: 1cm;
+}
+#features ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+    align-items: right;
+}
+
+#features ul li {
+    font-weight: bold; /* Make main features bold */
+    margin-bottom: 10px;
+    align-items: right;
+}
+
+#features ul ul {
+    list-style-type: disc; /* Sub-list uses bullets */
+    margin-left: 20px;
+    font-weight: normal;
+    align-items: right;
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+    font-size: 1.2rem;
+}
+.feature-content {
+    display: none; /* Hide all feature sections by default */
+    padding: 20px;
+    border: 1px solid #c9a964;
+    margin-top: 10px;
+    background: #c9a964;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.feature-nav button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background: #5a4604;
+    color: rgb(216, 203, 161);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.feature-nav button:hover {
+    background: #c9ab49;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('secuwallp.png.jpeg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
