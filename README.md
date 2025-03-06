@@ -1,2 +1,0 @@
-# secuwall-website
-Secuwall website
