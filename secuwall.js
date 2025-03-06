@@ -51,3 +51,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+function showFeature(featureId) {
+    // Hide all feature sections
+    document.querySelectorAll('.feature-content').forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Show the selected feature
+    document.getElementById(featureId).style.display = 'block';
+}
+
+// Show the first feature by default
+document.addEventListener("DOMContentLoaded", function () {
+    showFeature('vulnerability');
+});
