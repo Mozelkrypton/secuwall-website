@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuWall - Ultimate Cybersecurity</title>
+    <link rel="stylesheet" href="secuwall.css">
+    <script defer src="secuwall.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>SecuWall</h2>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contuctus.html">Contact</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <header>
+            <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+            <h1>SecuWall Dashboard</h1>
+        </header>
+    
+        <section id="dashboard">
+            <h2>Welcome to SecuWall</h2>
+            <img src="secupage.jpeg" alt="SecuWall Demo" class="gallery-img" onclick="openLightbox(this)">
+            <p>Your ultimate cybersecurity solution to protect your data.</p>
+            <p3>Fortify Your Digital World with SecuWall
+
+                Cyber threats are everywhere—but with SecuWall, you stay one step ahead. Our cutting-edge security solutions provide real-time protection, vulnerability scanning, and advanced encryption to safeguard your personal and business data.
+                
+                Whether you're browsing, working, or securing critical systems, SecuWall ensures ironclad defense against cyber threats. Take control of your digital security today!
+                
+                Stay Secure. Stay Ahead.</p3>
+            
+                <button onclick="location.href='newlogin.html';">Login</button>
+
+        </section>
+    
+        <section id="features">
+            <h2>Features</h2>
+            <div class="feature-nav">
+                <button onclick="showFeature('vulnerability')">Vulnerability Scanning</button>
+                <button onclick="showFeature('password')">Password Management</button>
+                <button onclick="showFeature('encryption')">Data Encryption</button>
+                <button onclick="showFeature('malware')">Malware Protection</button>
+                <button onclick="showFeature('backup')">Backup & Recovery</button>
+            </div>
+        
+            <div id="vulnerability" class="feature-content">
+                <h3>Vulnerability Scanning</h3>
+                <img src="secupage.jpeg" alt="SecuWall Demo" class="gallery-img" onclick="openLightbox(this)">
+                <ul>
+                    <li>Automated scanning</li>
+                    <li>Real-time threat detection</li>
+                    <li>Custom scan options</li>
+                </ul>
+            </div>
+        
+            <div id="password" class="feature-content">
+                <h3>Password Management</h3>
+                <img src="secukey.jpeg" alt="SecuWall Demo" class="gallery-img" onclick="openLightbox(this)">
+                <ul>
+                    <li>Secure password vault</li>
+                    <li>Multi-factor authentication</li>
+                    <li>Password generator</li>
+                </ul>
+            </div>
+        
+            <div id="encryption" class="feature-content">
+                <h3>Data Encryption</h3>
+                <img src="seculock.jpeg" alt="SecuWall Demo" class="gallery-img" onclick="openLightbox(this)">
+                <ul>
+                    <li>End-to-end encryption</li>
+                    <li>Secure file storage</li>
+                    <li>Military-grade encryption</li>
+                </ul>
+            </div>
+        
+            <div id="malware" class="feature-content">
+                <h3>Malware Protection</h3>
+                <img src="secuv.jpeg" alt="SecuWall Demo" class="gallery-img" onclick="openLightbox(this)">
+                <ul>
+                    <li>Real-time scanning</li>
+                    <li>Quarantine infected files</li>
+                    <li>AI-based threat analysis</li>
+                </ul>
+            </div>
+        
+            <div id="backup" class="feature-content">
+                <h3>Backup & Recovery</h3>
+                <img src="secuwallp.png.jpeg" alt="SecuWall Demo" class="gallery-img" onclick="openLightbox(this)">
+                <ul>
+                    <li>Automatic cloud backups</li>
+                    <li>Version control</li>
+                    <li>Quick restore options</li>
+                </ul>
+            </div>
+        </section>
+        
+    
+        <section id="pricing">
+            <h2>Pricing Plans</h2>
+            <button onclick="togglePricing()">Toggle Monthly/Yearly</button>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Price</th>
+                        <th>Features</th>
+                    </tr>
+                    <tr>
+                        <td>Basic</td>
+                        <td id="basic-price">$9.99" month</td>
+                        <td>Essential security features</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td id="premium-price">$19.99</td>
+                        <td>Advanced security + AI threat detection</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <p id="email-error" class="email-error">Invalid email format</p>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
